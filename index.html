@@ -1,137 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="icon" href="favicon.ico" type="image/x-icon">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>$BURN | burny.io</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Orbitron', sans-serif;
-      background: #0a0a0a;
-      color: #f0f0f0;
-      line-height: 1.6;
+      background: radial-gradient(#0a0a0a, #1a0505);
+      color: #f8f8f8;
+      overflow-x: hidden;
     }
     header {
-      padding: 4rem 2rem;
+      height: 100vh;
+      background: linear-gradient(180deg, rgba(20,0,0,0.9), rgba(0,0,0,0.9)), url('1.burn.png') no-repeat center center/contain;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      padding: 2rem;
     }
-    header img {
-      width: 120px;
+    header h1 {
+      font-size: 3.5rem;
+      color: #ff5c00;
+      text-shadow: 0 0 10px #ff5c00, 0 0 30px #ff2200;
+      animation: flicker 1.5s infinite;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.85; }
     }
-    .tagline {
-      font-size: 1.2rem;
-      color: #f86f03;
+    header p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+      color: #ffbb99;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      background: #ff5c00;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 0 20px #ff5c00;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 30px #ffaa00;
     }
     section {
-      padding: 3rem 2rem;
-      max-width: 800px;
+      padding: 4rem 2rem;
+      max-width: 960px;
       margin: auto;
     }
     h2 {
-      color: #f86f03;
-      margin-top: 2rem;
+      color: #ffaa33;
+      margin-bottom: 1rem;
+      font-size: 2.25rem;
+      text-align: center;
+      text-shadow: 0 0 10px #ff5c00;
     }
-    .tokenomics, .roadmap {
-      background: #111;
+    .tokenomics, .roadmap, .features {
+      background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+      border: 2px solid #ff5c00;
       padding: 2rem;
-      border-radius: 12px;
+      border-radius: 16px;
+      margin-top: 2rem;
+      box-shadow: 0 0 15px rgba(255, 92, 0, 0.3);
+    }
+    .features ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
       margin-top: 1rem;
     }
-    .socials a {
-      margin-right: 1rem;
-      color: #f86f03;
-      text-decoration: none;
+    .features li::before {
+      content: "🔥 ";
     }
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
       background: #111;
+      color: #999;
+      text-shadow: 0 0 5px #ff5c00;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .gallery img {
-      width: 120px;
-      border-radius: 8px;
-      border: 2px solid #f86f03;
+    @media(max-width: 768px) {
+      .features ul {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="./1.burn.png" alt="$BURN Logo">
-    <h1>$BURN</h1>
-    <p class="tagline">Built on Solana. Fueled by Fire.</p>
+    <h1>BUILT TO BURN</h1>
+    <p>The flame never fades. Burny fuels a meme-powered inferno on Solana. No mercy. No chill. Just 🔥.</p>
+    <button class="btn">Join the Flame</button>
   </header>
 
-  <section>
-    <h2>What is $BURN?</h2>
-    <p>$BURN is a new memecoin built not for pumps and dumps — but for longevity, fire, and an ever-growing legacy. We’re not just going to the moon. We’re going to the sun.</p>
-
-    <h2>Who is Burny?</h2>
-    <p>Burny is a one-of-a-kind character from the mythical Burn race. Where other tokens burn, Burny acts. He’s the one doing the burning, and now he launches his own token to return to the Sun — his creator.</p>
-
-    <h2>Core Features</h2>
+  <section class="features">
+    <h2>Why $BURN?</h2>
     <ul>
-      <li>🔥 High Burn Rate</li>
-      <li>🧠 Hold Model</li>
-      <li>🎁 Giveaways & Lotteries</li>
-      <li>🤝 Unbreakable Community</li>
-      <li>💎 Ultra-Transparent Tokenomics</li>
-      <li>🧢 Merch Drops</li>
+      <li>High-intensity burn tax</li>
+      <li>Diamond hand rewards</li>
+      <li>Loot drops & memes</li>
+      <li>Deflationary glory</li>
+      <li>Burn-to-earn system</li>
+      <li>Built on Solana speed</li>
     </ul>
+  </section>
 
+  <section class="tokenomics">
     <h2>Tokenomics</h2>
-    <div class="tokenomics">
-      <p><strong>Presale:</strong> 25%</p>
-      <p><strong>Liquidity Pool:</strong> 60%</p>
-      <p><strong>Team:</strong> 5% (locked)</p>
-      <p><strong>Community/Marketing:</strong> 10% (in 1 wallet)</p>
-    </div>
+    <p>25% Presale — 60% LP — 10% Community — 5% Team (locked)<br><br>Fully transparent. Fully tracked. Forever burning.</p>
+  </section>
 
-    <h2>Visuals</h2>
-    <div class="gallery">
-      <img src="2burn.png" alt="Burny visual 2">
-      <img src="3burn.png" alt="Burny visual 3">
-      <img src="4burn.png" alt="Burny visual 4">
-      <img src="5burn.png" alt="Burny visual 5">
-    </div>
-
-    <h2>Roadmap — From Earth to Sun</h2>
-    <div class="roadmap">
-      <p><strong>🚀 Phase 1: Ignition</strong><br> Token creation, launch, lore, website & community</p>
-      <p><strong>🌕 Phase 2: Moon Flyby</strong><br> Presale promo, loot drops, brand awareness</p>
-      <p><strong>☄️ Phase 3: Solar Approach</strong><br> Giveaways, partnerships, merch drops</p>
-      <p><strong>☀️ Phase 4: Entering the Sun</strong><br> Second token, full merch store, animated Burny series</p>
-    </div>
-
-    <h2>Join the Community</h2>
-    <div class="socials">
-      <a href="https://x.com/BURNTOTHESUN" target="_blank">Twitter</a>
-      <a href="https://www.youtube.com/@BURNBABY-k6p" target="_blank">YouTube</a>
-      <a href="https://www.instagram.com/burn2thesun/" target="_blank">Instagram</a>
-      <a href="https://t.me/+7uR9TpV5BLNkYzFk" target="_blank">Telegram</a>
-      <a href="https://discord.gg/rbfADn8hYa" target="_blank">Discord</a>
-    </div>
-
-    <h2>Presale</h2>
-    <p>🔥 Coming Soon. Stay tuned.</p>
+  <section class="roadmap">
+    <h2>Roadmap: The Burn Path</h2>
+    <ul>
+      <li><strong>Phase 1:</strong> Token launch, lore drop, meme ignition</li>
+      <li><strong>Phase 2:</strong> Presale marketing, loot drops, community raids</li>
+      <li><strong>Phase 3:</strong> Strategic partnerships, merch drops, NFT burn pass</li>
+      <li><strong>Phase 4:</strong> Second token release, animated series, lore expansion</li>
+    </ul>
   </section>
 
   <footer>
-    <p>&copy; 2025 $BURN Token | burny.io — All rights reserved</p>
+    <p>&copy; 2025 $BURN — All flames reserved</p>
   </footer>
 </body>
 </html>
