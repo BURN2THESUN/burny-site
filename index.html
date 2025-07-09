@@ -19,7 +19,7 @@
     }
     header {
       height: 100vh;
-      background: linear-gradient(180deg, rgba(20,0,0,0.9), rgba(0,0,0,0.9)), url('1.burn.png') no-repeat center center/contain;
+      background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWN2dndycHRkc2NiMm1ubWlyM2twaTl5c3ZpbmM1bXQ2dTIwZTZ2NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vgB7Zg1IlKzJJoVUZz/giphy.gif') no-repeat center center/cover;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -71,7 +71,7 @@
       text-align: center;
       text-shadow: 0 0 10px #ff5c00;
     }
-    .tokenomics, .roadmap, .features {
+    .tokenomics, .roadmap, .features, .lore {
       background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
       border: 2px solid #ff5c00;
       padding: 2rem;
@@ -88,6 +88,18 @@
     }
     .features li::before {
       content: "🔥 ";
+    }
+    .chart {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .chart img {
+      width: 220px;
+      filter: drop-shadow(0 0 5px #ff5c00);
+    }
+    .lore p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
     }
     footer {
       text-align: center;
@@ -125,6 +137,9 @@
 
   <section class="tokenomics">
     <h2>Tokenomics</h2>
+    <div class="chart">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Pie_chart_example.svg" alt="Tokenomics Chart">
+    </div>
     <p>25% Presale — 60% LP — 10% Community — 5% Team (locked)<br><br>Fully transparent. Fully tracked. Forever burning.</p>
   </section>
 
@@ -136,6 +151,13 @@
       <li><strong>Phase 3:</strong> Strategic partnerships, merch drops, NFT burn pass</li>
       <li><strong>Phase 4:</strong> Second token release, animated series, lore expansion</li>
     </ul>
+  </section>
+
+  <section class="lore">
+    <h2>The Legend of Burny</h2>
+    <p>In the digital ashes of failed meme coins, one flame refused to die out. Burny — the last of the Burnrace — rose with a mission: to return to the Sun, his origin of energy and chaos.</p>
+    <p>Every burn event across crypto history? That was him. Every coin sent to the dead wallet? Burny was watching. And now, with $BURN, his power is finally his own.</p>
+    <p>Fuel the fire. Join the flame. Burn with purpose.</p>
   </section>
 
   <footer>
